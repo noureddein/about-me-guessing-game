@@ -1,0 +1,28 @@
+img {
+    width: 250px;
+    height: 250px;
+    border-color: rgb(22, 37, 22);
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+#welcome {
+    font-family: 'Trebuchet MS';
+}
+
+#userName {
+    color: aqua;
+}
+
+p {
+    padding: 10px;
+    background-color: burlywood;
+    font-family: cursive;
+    width: 500px;
+    text-align: justify;
+}
+
+main {
+    display: flex;
+}
