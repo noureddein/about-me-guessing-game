@@ -1,20 +1,25 @@
 'use strict';
 // Question 1
-function gussingGame() {
+function guessingGame() {
+    let score = 0;
     alert('Let\'s play a game!! the answer will be y/n');
     let userInputName = prompt('Do you think my name is Nour Eddein??');
     if (userInputName.toLowerCase() === 'y' || userInputName.toLowerCase() === 'yes') {
         alert('You are Correct!!');
+        score = score + 1;
     } else {
         alert('Sorry! you are WRONG :(');
     }
     // console.log('The Answer is YES');
+
+
 
     // Question 2
     let userInputAge = prompt('The author age is 30 year? ');
 
     if (userInputAge.toLowerCase() === 'n' || userInputAge.toLowerCase() === 'no') {
         alert('You are Correct!!');
+        score = score + 1;
     } else {
         alert('Sorry! you are WRONG :(');
     }
@@ -23,6 +28,7 @@ function gussingGame() {
     let userInputWork = prompt('Does I work for 1 year in developer field?');
     if (userInputWork.toLowerCase() === 'n' || userInputWork.toLowerCase() === 'no') {
         alert('You are Correct!!');
+        score = score + 1;
     } else {
         alert('Sorry! you are WRONG :(');
     }
@@ -32,6 +38,7 @@ function gussingGame() {
     let userInputNationality = prompt('Do you think I\'m Jordanian');
     if (userInputNationality.toLowerCase() === 'y' || userInputNationality.toLowerCase() === 'yes') {
         alert('You are Correct!!');
+        score = score + 1;
     } else {
         alert('Sorry! you are WRONG :(');
     }
@@ -41,6 +48,8 @@ function gussingGame() {
     let userInputPlace = prompt('Does I live in KSA?');
     if (userInputPlace.toLowerCase() === 'n' || userInputPlace.toLowerCase() === 'no') {
         alert('You are Correct!!');
+        score = score + 1;
+
     } else {
         alert('Sorry! you are WRONG :(');
     }
@@ -49,16 +58,19 @@ function gussingGame() {
     let userName = prompt('What is your name please?');
     alert('Hello ' + userName);
     document.getElementById('userName').innerHTML = userName.toLocaleUpperCase();
+    console.log(score);
+    document.getElementById('totalScore').innerHTML = ('You got: ' + score + ' out of 5');
+    return score;
 }
+
 
 //Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
 
 function guessNumber() {
-    let attempts = 1;
-    let userInputs = prompt('try to guess the number?');
-    let arrList = ['1', ' 2', ' 3', ' 4', ' 5', ' 6', ' 7', ' 8', ' 9', '10', '11', '12', '13', '14', '15'];
-    while (attempts < 4) {
-        for (let i = 0; i < arrList.length; i++) {
+    let attempts = 4;
+    let userInputs = prompt('try to guess the number?You Only have 4 attempts!!');
+    while (attempts) {
+        for (let i = 0; i < 3; i++) {
             if (userInputs > '5') {
                 alert('You are too high!');
                 break;
@@ -74,7 +86,7 @@ function guessNumber() {
             }
         }
 
-        attempts += 1;
+        attempts -= 1;
         if (userInputs === '5') {
             break;
         }
