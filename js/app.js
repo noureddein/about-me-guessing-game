@@ -3,7 +3,7 @@ alert('Let\'s play a game!! the answer will be y/n');
 // Question 1
 
 let userInputName = prompt('Do you think my name is Nour Eddein??');
-if (userInputName.toLowerCase() === 'y') {
+if (userInputName.toLowerCase() === 'y' || userInputName.toLowerCase() === 'yes') {
     alert('You are Correct!!');
 } else {
     alert('Sorry! you are WRONG :(');
@@ -13,7 +13,7 @@ if (userInputName.toLowerCase() === 'y') {
 // Question 2
 let userInputAge = prompt('The author age is 30 year? ');
 
-if (userInputAge.toLowerCase() === 'n') {
+if (userInputAge.toLowerCase() === 'n' || userInputAge.toLowerCase() === 'no') {
     alert('You are Correct!!');
 } else {
     alert('Sorry! you are WRONG :(');
@@ -21,7 +21,7 @@ if (userInputAge.toLowerCase() === 'n') {
 // console.log('The Answer is NO');
 // Question 3
 let userInputWork = prompt('Does I work for 1 year in developer field?');
-if (userInputWork.toLowerCase() === 'n') {
+if (userInputWork.toLowerCase() === 'n' || userInputWork.toLowerCase() === 'no') {
     alert('You are Correct!!');
 } else {
     alert('Sorry! you are WRONG :(');
@@ -30,7 +30,7 @@ if (userInputWork.toLowerCase() === 'n') {
 
 // Question 4
 let userInputNationality = prompt('Do you think I\'m Jordanian');
-if (userInputNationality.toLowerCase() === 'y') {
+if (userInputNationality.toLowerCase() === 'y' || userInputNationality.toLowerCase() === 'yes') {
     alert('You are Correct!!');
 } else {
     alert('Sorry! you are WRONG :(');
@@ -39,7 +39,7 @@ if (userInputNationality.toLowerCase() === 'y') {
 
 // Question 5
 let userInputPlace = prompt('Does I live in KSA?');
-if (userInputPlace.toLowerCase() === 'n') {
+if (userInputPlace.toLowerCase() === 'n' || userInputPlace.toLowerCase() === 'no') {
     alert('You are Correct!!');
 } else {
     alert('Sorry! you are WRONG :(');
