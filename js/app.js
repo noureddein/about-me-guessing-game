@@ -1,6 +1,6 @@
 'use strict';
 // Question 1
-function guessingGame() {
+function guessGame() {
     let score = 0;
     alert('Let\'s play a game!! the answer will be y/n');
     let userInputName = prompt('Do you think my name is Nour Eddein??');
