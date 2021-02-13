@@ -1,5 +1,12 @@
 body {
     background-image: url(https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80);
+    height: 100%;
+    width: 100%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0 0 0px;
+    padding: 0;
 }
 
 #profile {
@@ -27,6 +34,27 @@ p {
     text-align: justify;
 }
 
-main {
-    /* display: flex; */
+#intro {
+    position: relative;
+    float: left;
+    margin: 15px;
+}
+
+#welcome {
+    position: absolute;
+    margin: 15px;
+    left: 300px;
+}
+
+#myIntro {
+    position: absolute;
+    margin: 15px;
+    top: 40px;
+    left: 300px;
+}
+
+#myIntroGame {
+    position: absolute;
+    top: 270px;
+    left: 500px;
 }
