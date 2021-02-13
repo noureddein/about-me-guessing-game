@@ -1,18 +1,19 @@
 body {
-    background-image: url(https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80);
+    /* background-image: url(https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80); */
     height: 100%;
     width: 100%;
+    background-color: #5C75F2;
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 0 0 0px;
+    margin: 10px 0 0 0px;
     padding: 0;
 }
 
 #profile {
     width: 250px;
     height: 250px;
-    border-color: rgb(22, 37, 22);
+    border-color: #A652FA;
     border-width: 5px;
     border-style: solid;
     border-radius: 50%;
@@ -28,10 +29,12 @@ body {
 
 p {
     padding: 10px;
-    background-color: burlywood;
+    background-color: #54E0FF;
     font-family: cursive;
     width: 500px;
     text-align: justify;
+    border: #6063FC solid;
+    box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.4), 3px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #intro {
@@ -44,6 +47,7 @@ p {
     position: absolute;
     margin: 15px;
     left: 300px;
+    width: 400px;
 }
 
 #myIntro {
@@ -56,5 +60,31 @@ p {
 #myIntroGame {
     position: absolute;
     top: 270px;
+    left: 400px;
+    width: 80px;
+}
+
+#totalScore {
+    position: absolute;
+    top: 270px;
     left: 500px;
+    width: 150px;
+}
+
+h3,
+h2 {
+    margin-left: 30px;
+}
+
+li {
+    margin-left: 30px;
+}
+
+p,
+:not(#myIntro) {
+    margin-left: 10px;
+}
+
+h2 {
+    margin-top: 50px;
 }
